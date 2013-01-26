@@ -1,0 +1,14 @@
+<h1>Variants for <%= @variants.first.product.name%></h1>
+<p><%= link_to 'Product', @variants.first.product %></p>
+<ul>
+<% @variants.each do |variant| %>
+<li>
+Size: <%= variant.size %>
+</li>
+<li>
+Color: <%= variant.color %>
+</li>
+<br />
+<hr>
+<% end %>
+</ul>
